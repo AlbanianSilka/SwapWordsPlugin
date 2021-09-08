@@ -1,0 +1,19 @@
+en:
+  js:
+    submit_label: 'Save'
+    notebook:
+      title: 'Notebook'
+      delete_note_label: 'Delete note'
+
+      create_note:
+        text_field_label: 'New note:'
+
+    keynotes:
+      title: 'Keywords'
+
+      create_key:
+        text_field_label: 'New keyword:'
+
+      create_link:
+        text_field_label: 'New link:'
+
