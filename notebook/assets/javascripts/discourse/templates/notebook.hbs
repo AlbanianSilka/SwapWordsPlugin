@@ -31,7 +31,7 @@
    </select>
 
    <button onclick="exeCmd('insertHorizontalRule');">HR</button>
-   <button onclick="exeCmd('createLink', prompt('Enter a URL: ', ' '));"><i class="fas fa-link"></i></button>
+   <button onclick="addLink()"><i class="fas fa-link"></i></button>
    <button onclick="exeCmd('unlink');"><i class="fas fa-unlink"></i></button>
    <button onclick="toggleSource();"><i class="fas fa-code"></i></button>
    <button onclick="toggleEdit();">Toggle edit</button>
@@ -121,6 +121,11 @@
       richTextField.document.designMode = 'On';
       isInEditMode = true;
      }
+    }
+    
+    function addLink () {
+     var link = prompt('Enter your url: ', "http://")
+     richTextField.document.execCommand('createLink', false, link)
     }
   </script>
 </body>
