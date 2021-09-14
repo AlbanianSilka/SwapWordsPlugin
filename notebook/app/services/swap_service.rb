@@ -3,8 +3,6 @@
 # Service for swap words def
 class SwapService
   class << self
-  include ActionController::Helpers
-  include ActionController::Flash
 
   def initialize(post)
     @post = post
